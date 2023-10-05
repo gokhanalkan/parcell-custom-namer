@@ -28,7 +28,7 @@ module.exports = new Namer({
 
       const parsed = path.parse(filePath)
       let result = path.join(rule.dest, parsed.name)
-      if (!bundle.needsStableName) result += "." + bundle.hashReference
+      //if (!bundle.needsStableName) result += "." + bundle.hashReference
       result += `.${type}`
 
       logger.info({
